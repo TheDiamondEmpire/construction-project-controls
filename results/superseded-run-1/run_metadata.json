@@ -1,0 +1,49 @@
+{
+  "data": "SYNTHETIC projects from src/sim/simulator.ts; no real project data was used",
+  "command": "npm run experiments",
+  "quickMode": false,
+  "productVersion": "0.1.0",
+  "sizes": {
+    "replicates": 5,
+    "trainPerVolume": 300,
+    "testPerVolume": 200,
+    "baseSeed": 20260101
+  },
+  "bootstrapResamples": 1000,
+  "simulatorConfig": {
+    "durWeeksMin": 30,
+    "durWeeksMax": 90,
+    "bacMin": 2000000,
+    "bacMax": 200000000,
+    "rateMedian": 0.95,
+    "rateSigma": 0.1,
+    "rateNoiseSigma": 0.06,
+    "rateNoisePhi": 0.7,
+    "costMedian": 1.05,
+    "costSigma": 0.1,
+    "costNoiseSigma": 0.03,
+    "costNoisePhi": 0.8,
+    "changesPerYear": {
+      "low": 3,
+      "medium": 10,
+      "high": 25
+    },
+    "changeMedianFraction": 0.006,
+    "changeSigma": 0.8,
+    "decisionBaseWeeks": 2,
+    "decisionMeanExtraWeeks": 6,
+    "approvalProbability": 0.7,
+    "executionWeeks": 8
+  },
+  "node": "v25.9.0",
+  "platform": "win32-x64",
+  "logicalCpus": 8,
+  "startedAt": "2026-11-10T17:21:56.704Z",
+  "outputSha256": {
+    "e1_cost_forecast.csv": "e9858ee26f11c5453cade2dad792325b4a64c1a0608a1273bad94d16d2d4c105",
+    "e3_finish_forecast.csv": "a6d314dfa267b959c24da5f0f6b802f261f186e9d7118b7569de6579352e29d6",
+    "e4_reporting_lag.csv": "ee0a6cebabb5228caaeecd781017759a1f53f352eb09f27692ee72bfb1578bb0",
+    "summary.json": "b8426368b0517ef58a1c972e28414e51d6d5456766135f77fa6379dc2e3b6821"
+  },
+  "note": "Nothing here measures software speed. Errors are forecast errors on synthetic projects."
+}

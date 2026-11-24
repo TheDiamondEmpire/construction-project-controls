@@ -1,0 +1,78 @@
+{
+  "command": "npm run measure",
+  "productVersion": "0.1.0",
+  "node": "v25.9.0",
+  "platform": "win32-x64",
+  "logicalCpus": 8,
+  "startedAt": "2026-11-10T17:27:13.096Z",
+  "steps": [
+    {
+      "name": "path scan",
+      "command": "node scripts/check-paths.mjs --out=<dir>",
+      "exitCode": 0,
+      "outputs": {
+        "path-scan.json": "b73035fc3d56159d2c1b33dea2f0b7c6f3498ae1800ae36e21083570836b3d69"
+      }
+    },
+    {
+      "name": "production licences",
+      "command": "node scripts/license-check.mjs --out=<dir>",
+      "exitCode": 0,
+      "outputs": {
+        "licenses.json": "b5c3769532a41d779b84af235dee5970a70ca67345d201931dd4426907cb35e0"
+      }
+    },
+    {
+      "name": "colour contrast",
+      "command": "node scripts/contrast.mjs --out=<dir>",
+      "exitCode": 0,
+      "outputs": {
+        "contrast.json": "ed092887b774a09e3f48c5cb6e7e603e1930521d0716f2847b74f517148c17da"
+      }
+    },
+    {
+      "name": "static asset weight",
+      "command": "node scripts/web-weight.mjs --out=<dir>",
+      "exitCode": 0,
+      "outputs": {
+        "web-weight.json": "17faafbfe160406c9a9f6d60a0692c15d613d591140e58c3e64737a0d913a544"
+      }
+    },
+    {
+      "name": "browser checks",
+      "command": "node scripts/browser-checks.mjs --out=<dir>",
+      "exitCode": 0,
+      "outputs": {
+        "a11y-axe.json": "f42ed3695ad2d1a43bd3ba565b419f5a8e84633c4998413464c4bdfbfaccc507",
+        "first-load.json": "cfeee420004ca44a8e55a79e94ca6ca332fbcaed814d274ea1cc44cc76a4a271"
+      }
+    },
+    {
+      "name": "forecasting experiments",
+      "command": "node experiments/run_all.ts --out=<dir>",
+      "exitCode": 0,
+      "outputs": {
+        "e1_cost_forecast.csv": "e9858ee26f11c5453cade2dad792325b4a64c1a0608a1273bad94d16d2d4c105",
+        "e3_finish_forecast.csv": "a6d314dfa267b959c24da5f0f6b802f261f186e9d7118b7569de6579352e29d6",
+        "e4_reporting_lag.csv": "ee0a6cebabb5228caaeecd781017759a1f53f352eb09f27692ee72bfb1578bb0",
+        "summary.json": "e7e94149096e939f7e1fbda4cc31cb0304b116fc1c1a93d04a941fb57e95b4ad",
+        "run_metadata.json": "d6b5a1464dcdffd56189367e1cd6dc2d925ffdc766f9ef46a182b72c02868843"
+      }
+    }
+  ],
+  "allStepsExitedZero": true,
+  "note": "Run once, in one invocation, after the code was frozen. Exit codes are recorded as they happened. No timing is reported anywhere in these results.",
+  "filesInDirectory": [
+    "a11y-axe.json",
+    "contrast.json",
+    "e1_cost_forecast.csv",
+    "e3_finish_forecast.csv",
+    "e4_reporting_lag.csv",
+    "first-load.json",
+    "licenses.json",
+    "path-scan.json",
+    "run_metadata.json",
+    "summary.json",
+    "web-weight.json"
+  ]
+}

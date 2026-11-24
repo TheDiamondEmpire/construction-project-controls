@@ -1,0 +1,72 @@
+{
+  "what": "Static files served to the browser (application shell, offline module, service worker, manifest, icon and the shared merge module). No images, fonts or third-party code.",
+  "files": [
+    {
+      "file": "web/api.js",
+      "bytes": 1593,
+      "gzipBytes": 757
+    },
+    {
+      "file": "web/app.js",
+      "bytes": 12967,
+      "gzipBytes": 4375
+    },
+    {
+      "file": "web/dom.js",
+      "bytes": 3733,
+      "gzipBytes": 1562
+    },
+    {
+      "file": "web/icon.svg",
+      "bytes": 416,
+      "gzipBytes": 263
+    },
+    {
+      "file": "web/index.html",
+      "bytes": 751,
+      "gzipBytes": 432
+    },
+    {
+      "file": "web/manifest.webmanifest",
+      "bytes": 393,
+      "gzipBytes": 259
+    },
+    {
+      "file": "web/offline.js",
+      "bytes": 7405,
+      "gzipBytes": 2666
+    },
+    {
+      "file": "web/styles.css",
+      "bytes": 8406,
+      "gzipBytes": 2405
+    },
+    {
+      "file": "web/sw.js",
+      "bytes": 1271,
+      "gzipBytes": 632
+    },
+    {
+      "file": "web/views-field.js",
+      "bytes": 8977,
+      "gzipBytes": 3281
+    },
+    {
+      "file": "web/views-plan.js",
+      "bytes": 13574,
+      "gzipBytes": 4985
+    },
+    {
+      "file": "web/views-workflow.js",
+      "bytes": 16221,
+      "gzipBytes": 4976
+    },
+    {
+      "file": "src/shared/logmerge.js",
+      "bytes": 6960,
+      "gzipBytes": 2584
+    }
+  ],
+  "totalBytes": 82667,
+  "totalGzipBytes": 29177
+}

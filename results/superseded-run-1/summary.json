@@ -1,0 +1,1639 @@
+{
+  "criteria": {
+    "H1": "Regression EAC (with change-order exposure) reduces mean absolute percentage error by at least 20% versus the CPI-based EAC at every checkpoint of 30%, 40%, 50%, 60% and 70% complete, with Holm-adjusted paired Wilcoxon p < 0.05 at each of those five checkpoints.",
+    "H2": "In high-change-volume projects, adding pending change-order exposure to the regression reduces per-project mean absolute percentage error (averaged over the 30-70% checkpoints) by at least 10% with a bootstrap 95% interval above zero and Holm-adjusted p < 0.05 (Holm across the three volumes).",
+    "H3": "The earned-schedule finish forecast has a lower mean absolute finish-date error than the traditional SPI(cost) forecast at every checkpoint of 50%, 60%, 70%, 80% and 90% complete, with Holm-adjusted paired Wilcoxon p < 0.05 at each of those five checkpoints.",
+    "H4": "With reporting delayed by 4 weeks, the mean absolute percentage error at the 50% checkpoint is at most 1.5 times the error with no delay, for both the CPI-based and the regression EAC (point estimates).",
+    "note": "Thresholds (20%, 10%, 1.5 times) and the meaning of \"materially\" and \"gracefully\" are the author's operationalisations, fixed before the reported run. Smaller or larger effects are reported as measured."
+  },
+  "skips": {
+    "e1": 0,
+    "e3": 0,
+    "e4": 0
+  },
+  "bootstrapResamples": 1000,
+  "E1": {
+    "checkpoints": [
+      {
+        "checkpoint": 0.1,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.128308,
+          "ci95": [
+            0.125262,
+            0.131295
+          ],
+          "median": 0.120112,
+          "iqr": 0.125729
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.074707,
+          "ci95": [
+            0.072614,
+            0.076825
+          ],
+          "median": 0.060699,
+          "iqr": 0.082105
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.056202,
+          "ci95": [
+            0.054776,
+            0.057634
+          ],
+          "median": 0.049437,
+          "iqr": 0.057304
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.044448,
+          "ci95": [
+            0.043179,
+            0.04567
+          ],
+          "median": 0.036132,
+          "iqr": 0.046544
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.405037,
+          "reductionCi95": [
+            0.384598,
+            0.424402
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 25.983179,
+          "delta": 0.387333
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -0.717479,
+          "reductionCi95": [
+            -0.76249,
+            -0.674624
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -32.246254,
+          "delta": -0.496
+        }
+      },
+      {
+        "checkpoint": 0.2,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.122467,
+          "ci95": [
+            0.11957,
+            0.125319
+          ],
+          "median": 0.113075,
+          "iqr": 0.120877
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.066132,
+          "ci95": [
+            0.064344,
+            0.067974
+          ],
+          "median": 0.053532,
+          "iqr": 0.072672
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.048913,
+          "ci95": [
+            0.047532,
+            0.050097
+          ],
+          "median": 0.043258,
+          "iqr": 0.050447
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.037525,
+          "ci95": [
+            0.036429,
+            0.038671
+          ],
+          "median": 0.030146,
+          "iqr": 0.038249
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.432573,
+          "reductionCi95": [
+            0.412833,
+            0.450527
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 27.371683,
+          "delta": 0.402667
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -0.851856,
+          "reductionCi95": [
+            -0.906209,
+            -0.800875
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -34.152293,
+          "delta": -0.546667
+        }
+      },
+      {
+        "checkpoint": 0.3,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.117176,
+          "ci95": [
+            0.114463,
+            0.120043
+          ],
+          "median": 0.106491,
+          "iqr": 0.115383
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.058215,
+          "ci95": [
+            0.056573,
+            0.059772
+          ],
+          "median": 0.046887,
+          "iqr": 0.063804
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.04319,
+          "ci95": [
+            0.042106,
+            0.044298
+          ],
+          "median": 0.03674,
+          "iqr": 0.043602
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.03288,
+          "ci95": [
+            0.031927,
+            0.033951
+          ],
+          "median": 0.025795,
+          "iqr": 0.034023
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.435206,
+          "reductionCi95": [
+            0.415637,
+            0.453779
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 27.322448,
+          "delta": 0.413333,
+          "holmP": 0
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -1.012803,
+          "reductionCi95": [
+            -1.068433,
+            -0.95487
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -35.748465,
+          "delta": -0.57
+        }
+      },
+      {
+        "checkpoint": 0.4,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.112421,
+          "ci95": [
+            0.109578,
+            0.115218
+          ],
+          "median": 0.10044,
+          "iqr": 0.111575
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.050643,
+          "ci95": [
+            0.049169,
+            0.052173
+          ],
+          "median": 0.039581,
+          "iqr": 0.056018
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.037738,
+          "ci95": [
+            0.036781,
+            0.038832
+          ],
+          "median": 0.032012,
+          "iqr": 0.037899
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.028492,
+          "ci95": [
+            0.027654,
+            0.0293
+          ],
+          "median": 0.022695,
+          "iqr": 0.029444
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.437403,
+          "reductionCi95": [
+            0.419683,
+            0.455399
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 27.18956,
+          "delta": 0.406667,
+          "holmP": 0
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -1.219853,
+          "reductionCi95": [
+            -1.285251,
+            -1.15947
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -37.355027,
+          "delta": -0.593333
+        }
+      },
+      {
+        "checkpoint": 0.5,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.107442,
+          "ci95": [
+            0.104728,
+            0.109945
+          ],
+          "median": 0.095837,
+          "iqr": 0.107413
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.043012,
+          "ci95": [
+            0.041751,
+            0.044316
+          ],
+          "median": 0.032998,
+          "iqr": 0.048189
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.03216,
+          "ci95": [
+            0.031257,
+            0.033034
+          ],
+          "median": 0.027576,
+          "iqr": 0.032061
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.023664,
+          "ci95": [
+            0.02293,
+            0.024396
+          ],
+          "median": 0.018929,
+          "iqr": 0.024538
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.449818,
+          "reductionCi95": [
+            0.431815,
+            0.46757
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 28.022064,
+          "delta": 0.416,
+          "holmP": 0
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -1.497949,
+          "reductionCi95": [
+            -1.581857,
+            -1.41707
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -38.957564,
+          "delta": -0.624667
+        }
+      },
+      {
+        "checkpoint": 0.6,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.102823,
+          "ci95": [
+            0.100558,
+            0.105349
+          ],
+          "median": 0.091754,
+          "iqr": 0.104219
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.0354,
+          "ci95": [
+            0.034223,
+            0.036542
+          ],
+          "median": 0.026112,
+          "iqr": 0.038955
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.027178,
+          "ci95": [
+            0.026412,
+            0.027938
+          ],
+          "median": 0.022799,
+          "iqr": 0.02753
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.019535,
+          "ci95": [
+            0.018879,
+            0.020149
+          ],
+          "median": 0.015328,
+          "iqr": 0.018831
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.448163,
+          "reductionCi95": [
+            0.429847,
+            0.464837
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 27.741914,
+          "delta": 0.4,
+          "holmP": 0
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -1.90461,
+          "reductionCi95": [
+            -2.009995,
+            -1.809209
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -40.534472,
+          "delta": -0.667333
+        }
+      },
+      {
+        "checkpoint": 0.7,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.098644,
+          "ci95": [
+            0.096264,
+            0.10113
+          ],
+          "median": 0.088632,
+          "iqr": 0.099996
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.02756,
+          "ci95": [
+            0.02662,
+            0.028497
+          ],
+          "median": 0.019128,
+          "iqr": 0.031258
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.021871,
+          "ci95": [
+            0.02124,
+            0.022546
+          ],
+          "median": 0.017796,
+          "iqr": 0.021336
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.015048,
+          "ci95": [
+            0.014556,
+            0.015571
+          ],
+          "median": 0.01131,
+          "iqr": 0.015021
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.453966,
+          "reductionCi95": [
+            0.433256,
+            0.473781
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 25.892844,
+          "delta": 0.358667,
+          "holmP": 0
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -2.579324,
+          "reductionCi95": [
+            -2.718427,
+            -2.440266
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -42.577741,
+          "delta": -0.722667
+        }
+      },
+      {
+        "checkpoint": 0.8,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.094195,
+          "ci95": [
+            0.091662,
+            0.096447
+          ],
+          "median": 0.083841,
+          "iqr": 0.094935
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.01921,
+          "ci95": [
+            0.018504,
+            0.019991
+          ],
+          "median": 0.011634,
+          "iqr": 0.021455
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.016195,
+          "ci95": [
+            0.015705,
+            0.016726
+          ],
+          "median": 0.0126,
+          "iqr": 0.01561
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.010272,
+          "ci95": [
+            0.009924,
+            0.010661
+          ],
+          "median": 0.007737,
+          "iqr": 0.010134
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.465278,
+          "reductionCi95": [
+            0.443269,
+            0.486023
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 23.98514,
+          "delta": 0.321333
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -3.903576,
+          "reductionCi95": [
+            -4.113073,
+            -3.70946
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -44.366616,
+          "delta": -0.782
+        }
+      },
+      {
+        "checkpoint": 0.9,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.090034,
+          "ci95": [
+            0.087872,
+            0.092166
+          ],
+          "median": 0.078633,
+          "iqr": 0.091893
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.010458,
+          "ci95": [
+            0.009992,
+            0.010974
+          ],
+          "median": 0.004928,
+          "iqr": 0.011159
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.009897,
+          "ci95": [
+            0.009543,
+            0.010266
+          ],
+          "median": 0.007286,
+          "iqr": 0.009073
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.005469,
+          "ci95": [
+            0.005261,
+            0.005681
+          ],
+          "median": 0.003692,
+          "iqr": 0.005085
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.477011,
+          "reductionCi95": [
+            0.453846,
+            0.499228
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 20.285926,
+          "delta": 0.253333
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -7.609359,
+          "reductionCi95": [
+            -8.052998,
+            -7.18743
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -46.082629,
+          "delta": -0.88
+        }
+      },
+      {
+        "checkpoint": 0.95,
+        "n": 3000,
+        "bac": {
+          "n": 3000,
+          "mean": 0.088253,
+          "ci95": [
+            0.085918,
+            0.090556
+          ],
+          "median": 0.076794,
+          "iqr": 0.09074
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.006124,
+          "ci95": [
+            0.005755,
+            0.006531
+          ],
+          "median": 0.002092,
+          "iqr": 0.00572
+        },
+        "regNoExposure": {
+          "n": 3000,
+          "mean": 0.006598,
+          "ci95": [
+            0.006327,
+            0.006894
+          ],
+          "median": 0.004416,
+          "iqr": 0.00554
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.003263,
+          "ci95": [
+            0.0031,
+            0.003426
+          ],
+          "median": 0.001955,
+          "iqr": 0.002828
+        },
+        "regVsCpi": {
+          "n": 3000,
+          "reduction": 0.467257,
+          "reductionCi95": [
+            0.435779,
+            0.496506
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 14.099338,
+          "delta": 0.143333
+        },
+        "bacVsCpi": {
+          "n": 3000,
+          "reduction": -13.409882,
+          "reductionCi95": [
+            -14.321169,
+            -12.475552
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": -46.780117,
+          "delta": -0.928667
+        }
+      }
+    ],
+    "H1": {
+      "window": [
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7
+      ],
+      "reductions": [
+        0.435206,
+        0.437403,
+        0.449818,
+        0.448163,
+        0.453966
+      ],
+      "holmP": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verdict": "supported on this synthetic generator"
+    }
+  },
+  "E2": {
+    "byVolume": [
+      {
+        "volume": "low",
+        "projects": 1000,
+        "mapeCpi": 0.018004,
+        "mapeRegNoExposure": 0.034253,
+        "mapeReg": 0.020397,
+        "exposureEffect": {
+          "n": 1000,
+          "reduction": 0.404534,
+          "reductionCi95": [
+            0.388452,
+            0.421655
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 23.222288,
+          "delta": 0.69,
+          "holmP": 0
+        }
+      },
+      {
+        "volume": "medium",
+        "projects": 1000,
+        "mapeCpi": 0.03565,
+        "mapeRegNoExposure": 0.02269,
+        "mapeReg": 0.020597,
+        "exposureEffect": {
+          "n": 1000,
+          "reduction": 0.092251,
+          "reductionCi95": [
+            0.063826,
+            0.120423
+          ],
+          "wilcoxonP": 4.2016433443592405e-8,
+          "wilcoxonZ": 5.482589,
+          "delta": 0.112,
+          "holmP": 4.2016433443592405e-8
+        }
+      },
+      {
+        "volume": "high",
+        "projects": 1000,
+        "mapeCpi": 0.075244,
+        "mapeRegNoExposure": 0.040338,
+        "mapeReg": 0.030778,
+        "exposureEffect": {
+          "n": 1000,
+          "reduction": 0.237003,
+          "reductionCi95": [
+            0.212165,
+            0.261493
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 14.451283,
+          "delta": 0.374,
+          "holmP": 0
+        }
+      }
+    ],
+    "H2": {
+      "verdict": "supported on this synthetic generator (which makes change orders matter by construction)"
+    }
+  },
+  "E3": {
+    "checkpoints": [
+      {
+        "checkpoint": 0.1,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.615681,
+            41.011554
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 42.103745,
+          "ci95": [
+            40.815459,
+            43.399436
+          ],
+          "median": 33.087616,
+          "iqr": 44.123388
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 17.082281,
+          "ci95": [
+            16.500957,
+            17.685067
+          ],
+          "median": 12.725002,
+          "iqr": 16.667243
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 15.804823,
+          "ci95": [
+            15.25839,
+            16.348145
+          ],
+          "median": 11.900622,
+          "iqr": 16.077087
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.594281,
+          "reductionCi95": [
+            0.578882,
+            0.610005
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 36.012407,
+          "delta": 0.560667
+        }
+      },
+      {
+        "checkpoint": 0.2,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.611527,
+            41.093874
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 35.609297,
+          "ci95": [
+            34.536764,
+            36.644873
+          ],
+          "median": 28.260301,
+          "iqr": 38.066781
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 16.704366,
+          "ci95": [
+            16.095359,
+            17.277707
+          ],
+          "median": 12.004159,
+          "iqr": 16.609811
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 14.68377,
+          "ci95": [
+            14.19977,
+            15.20933
+          ],
+          "median": 10.928614,
+          "iqr": 14.463954
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.530899,
+          "reductionCi95": [
+            0.512211,
+            0.547986
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 33.028195,
+          "delta": 0.520667
+        }
+      },
+      {
+        "checkpoint": 0.3,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.508583,
+            41.070316
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 30.696087,
+          "ci95": [
+            29.762444,
+            31.641034
+          ],
+          "median": 23.717596,
+          "iqr": 31.761235
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 15.536881,
+          "ci95": [
+            14.954094,
+            16.177257
+          ],
+          "median": 10.846307,
+          "iqr": 15.160119
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 13.396815,
+          "ci95": [
+            12.931059,
+            13.916711
+          ],
+          "median": 10.057972,
+          "iqr": 13.36315
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.493848,
+          "reductionCi95": [
+            0.475556,
+            0.511965
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 31.212574,
+          "delta": 0.482
+        }
+      },
+      {
+        "checkpoint": 0.4,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.602273,
+            41.066352
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 25.953832,
+          "ci95": [
+            25.245862,
+            26.740594
+          ],
+          "median": 20.492624,
+          "iqr": 26.918437
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 13.918266,
+          "ci95": [
+            13.433774,
+            14.428601
+          ],
+          "median": 9.555274,
+          "iqr": 13.70919
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 11.898163,
+          "ci95": [
+            11.495784,
+            12.350487
+          ],
+          "median": 8.936092,
+          "iqr": 11.964818
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.46373,
+          "reductionCi95": [
+            0.443972,
+            0.482251
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 29.789462,
+          "delta": 0.470667
+        }
+      },
+      {
+        "checkpoint": 0.5,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.645821,
+            41.054974
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 21.069973,
+          "ci95": [
+            20.433057,
+            21.698107
+          ],
+          "median": 16.937177,
+          "iqr": 22.063103
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 12.18748,
+          "ci95": [
+            11.727014,
+            12.643541
+          ],
+          "median": 8.616083,
+          "iqr": 12.218409
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 10.375406,
+          "ci95": [
+            10.043978,
+            10.724949
+          ],
+          "median": 8.055076,
+          "iqr": 10.541035
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.421571,
+          "reductionCi95": [
+            0.400327,
+            0.443303
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 27.121841,
+          "delta": 0.422667,
+          "holmP": 0
+        }
+      },
+      {
+        "checkpoint": 0.6,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.620604,
+            41.087794
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 16.209022,
+          "ci95": [
+            15.736397,
+            16.657439
+          ],
+          "median": 13.242498,
+          "iqr": 16.643327
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 10.641722,
+          "ci95": [
+            10.276667,
+            11.018891
+          ],
+          "median": 7.528061,
+          "iqr": 10.577473
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 9.059041,
+          "ci95": [
+            8.759928,
+            9.328858
+          ],
+          "median": 6.978727,
+          "iqr": 9.17497
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.343469,
+          "reductionCi95": [
+            0.322023,
+            0.363942
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 22.950933,
+          "delta": 0.344,
+          "holmP": 0
+        }
+      },
+      {
+        "checkpoint": 0.7,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.604353,
+            41.090766
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 11.152611,
+          "ci95": [
+            10.800224,
+            11.492671
+          ],
+          "median": 8.395968,
+          "iqr": 11.556053
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 8.899819,
+          "ci95": [
+            8.584608,
+            9.210404
+          ],
+          "median": 6.423623,
+          "iqr": 8.890767
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 7.849152,
+          "ci95": [
+            7.599038,
+            8.091196
+          ],
+          "median": 6.088095,
+          "iqr": 7.95441
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.201997,
+          "reductionCi95": [
+            0.180376,
+            0.222701
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 14.129519,
+          "delta": 0.21,
+          "holmP": 0
+        }
+      },
+      {
+        "checkpoint": 0.8,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.525348,
+            41.056467
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 9.776065,
+          "ci95": [
+            9.383545,
+            10.177388
+          ],
+          "median": 6.765686,
+          "iqr": 9.968372
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 7.033807,
+          "ci95": [
+            6.808146,
+            7.273902
+          ],
+          "median": 5.215897,
+          "iqr": 6.869408
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 6.512037,
+          "ci95": [
+            6.319077,
+            6.722292
+          ],
+          "median": 4.980155,
+          "iqr": 6.504133
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.280507,
+          "reductionCi95": [
+            0.258185,
+            0.301225
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 20.41014,
+          "delta": 0.247,
+          "holmP": 0
+        }
+      },
+      {
+        "checkpoint": 0.9,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.620151,
+            41.103679
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 16.21292,
+          "ci95": [
+            15.466855,
+            16.985165
+          ],
+          "median": 8.097562,
+          "iqr": 16.952058
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 5.228918,
+          "ci95": [
+            5.06767,
+            5.394604
+          ],
+          "median": 3.952294,
+          "iqr": 5.395984
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 5.100511,
+          "ci95": [
+            4.931615,
+            5.268489
+          ],
+          "median": 3.851638,
+          "iqr": 5.298432
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.677485,
+          "reductionCi95": [
+            0.66309,
+            0.692781
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 31.79551,
+          "delta": 0.446667,
+          "holmP": 0
+        }
+      },
+      {
+        "checkpoint": 0.95,
+        "n": 3000,
+        "planned": {
+          "n": 3000,
+          "mean": 39.827199,
+          "ci95": [
+            38.611071,
+            41.052486
+          ],
+          "median": 30.75998,
+          "iqr": 41.456658
+        },
+        "traditional": {
+          "n": 3000,
+          "mean": 24.220605,
+          "ci95": [
+            23.249016,
+            25.14175
+          ],
+          "median": 13.158143,
+          "iqr": 26.745416
+        },
+        "earnedSchedule": {
+          "n": 3000,
+          "mean": 4.459949,
+          "ci95": [
+            4.304607,
+            4.611518
+          ],
+          "median": 3.205399,
+          "iqr": 4.434392
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 4.361716,
+          "ci95": [
+            4.210777,
+            4.516052
+          ],
+          "median": 3.24148,
+          "iqr": 4.574417
+        },
+        "esVsTraditional": {
+          "n": 3000,
+          "reduction": 0.815861,
+          "reductionCi95": [
+            0.806639,
+            0.82505
+          ],
+          "wilcoxonP": 0,
+          "wilcoxonZ": 41.201588,
+          "delta": 0.682
+        }
+      }
+    ],
+    "H3": {
+      "window": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "holmP": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verdict": "supported on this synthetic generator"
+    }
+  },
+  "E4": {
+    "checkpoint": 0.5,
+    "byLag": [
+      {
+        "lag": 0,
+        "bac": {
+          "n": 3000,
+          "mean": 0.107442,
+          "ci95": [
+            0.104724,
+            0.109973
+          ],
+          "median": 0.095837,
+          "iqr": 0.107413
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.043012,
+          "ci95": [
+            0.041731,
+            0.044363
+          ],
+          "median": 0.032998,
+          "iqr": 0.048189
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.023664,
+          "ci95": [
+            0.022992,
+            0.024388
+          ],
+          "median": 0.018929,
+          "iqr": 0.024538
+        },
+        "earnedScheduleDays": {
+          "n": 3000,
+          "mean": 12.18748,
+          "ci95": [
+            11.742469,
+            12.600619
+          ],
+          "median": 8.616083,
+          "iqr": 12.218409
+        },
+        "traditionalDays": {
+          "n": 3000,
+          "mean": 21.069973,
+          "ci95": [
+            20.480993,
+            21.697197
+          ],
+          "median": 16.937177,
+          "iqr": 22.063103
+        }
+      },
+      {
+        "lag": 1,
+        "bac": {
+          "n": 3000,
+          "mean": 0.108264,
+          "ci95": [
+            0.105686,
+            0.111034
+          ],
+          "median": 0.096423,
+          "iqr": 0.108384
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.04446,
+          "ci95": [
+            0.043262,
+            0.045762
+          ],
+          "median": 0.034065,
+          "iqr": 0.049514
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.027731,
+          "ci95": [
+            0.026951,
+            0.028485
+          ],
+          "median": 0.023349,
+          "iqr": 0.028552
+        },
+        "earnedScheduleDays": {
+          "n": 3000,
+          "mean": 12.41294,
+          "ci95": [
+            11.982692,
+            12.835146
+          ],
+          "median": 8.889159,
+          "iqr": 12.370716
+        },
+        "traditionalDays": {
+          "n": 3000,
+          "mean": 22.158712,
+          "ci95": [
+            21.507123,
+            22.769624
+          ],
+          "median": 17.73712,
+          "iqr": 23.376568
+        }
+      },
+      {
+        "lag": 2,
+        "bac": {
+          "n": 3000,
+          "mean": 0.109411,
+          "ci95": [
+            0.106701,
+            0.112101
+          ],
+          "median": 0.097301,
+          "iqr": 0.10908
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.046388,
+          "ci95": [
+            0.045079,
+            0.047731
+          ],
+          "median": 0.036123,
+          "iqr": 0.051197
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.033655,
+          "ci95": [
+            0.032777,
+            0.034557
+          ],
+          "median": 0.029123,
+          "iqr": 0.034343
+        },
+        "earnedScheduleDays": {
+          "n": 3000,
+          "mean": 12.751288,
+          "ci95": [
+            12.333852,
+            13.230648
+          ],
+          "median": 9.014861,
+          "iqr": 12.737621
+        },
+        "traditionalDays": {
+          "n": 3000,
+          "mean": 23.243587,
+          "ci95": [
+            22.569162,
+            23.92807
+          ],
+          "median": 18.671077,
+          "iqr": 24.393878
+        }
+      },
+      {
+        "lag": 3,
+        "bac": {
+          "n": 3000,
+          "mean": 0.110672,
+          "ci95": [
+            0.108119,
+            0.113121
+          ],
+          "median": 0.098745,
+          "iqr": 0.110238
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.048309,
+          "ci95": [
+            0.046936,
+            0.049687
+          ],
+          "median": 0.037916,
+          "iqr": 0.052904
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.04082,
+          "ci95": [
+            0.039829,
+            0.041815
+          ],
+          "median": 0.036398,
+          "iqr": 0.039906
+        },
+        "earnedScheduleDays": {
+          "n": 3000,
+          "mean": 13.115268,
+          "ci95": [
+            12.631143,
+            13.560565
+          ],
+          "median": 9.321602,
+          "iqr": 12.66345
+        },
+        "traditionalDays": {
+          "n": 3000,
+          "mean": 24.442405,
+          "ci95": [
+            23.836269,
+            25.156239
+          ],
+          "median": 19.893764,
+          "iqr": 25.64735
+        }
+      },
+      {
+        "lag": 4,
+        "bac": {
+          "n": 3000,
+          "mean": 0.111823,
+          "ci95": [
+            0.109131,
+            0.114694
+          ],
+          "median": 0.100127,
+          "iqr": 0.112006
+        },
+        "cpi": {
+          "n": 3000,
+          "mean": 0.050307,
+          "ci95": [
+            0.048841,
+            0.051774
+          ],
+          "median": 0.040412,
+          "iqr": 0.054475
+        },
+        "reg": {
+          "n": 3000,
+          "mean": 0.04822,
+          "ci95": [
+            0.047094,
+            0.049291
+          ],
+          "median": 0.044056,
+          "iqr": 0.045087
+        },
+        "earnedScheduleDays": {
+          "n": 3000,
+          "mean": 13.427065,
+          "ci95": [
+            12.944489,
+            13.902197
+          ],
+          "median": 9.462938,
+          "iqr": 13.467223
+        },
+        "traditionalDays": {
+          "n": 3000,
+          "mean": 25.543503,
+          "ci95": [
+            24.808093,
+            26.310946
+          ],
+          "median": 20.624852,
+          "iqr": 27.031257
+        }
+      }
+    ],
+    "cpi": {
+      "projects": 3000,
+      "ratioLag4OverLag0": 1.169602,
+      "ci95": [
+        1.159724,
+        1.180608
+      ],
+      "slopePerWeek": 0.001844
+    },
+    "reg": {
+      "projects": 3000,
+      "ratioLag4OverLag0": 2.037647,
+      "ci95": [
+        1.973009,
+        2.105939
+      ],
+      "slopePerWeek": 0.00622
+    },
+    "H4": {
+      "verdict": "not supported on this synthetic generator"
+    }
+  }
+}

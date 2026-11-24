@@ -1,0 +1,205 @@
+{
+  "tool": "axe-core",
+  "axeVersion": "4.11.1",
+  "browser": "Chromium-based browser 157.0.8103.39",
+  "rulesetTags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "best-practice"
+  ],
+  "scope": "11 screens as a project manager (login screen signed out), at 1280x800 and 375x812, on SYNTHETIC demo data",
+  "limits": "Automated rules detect only part of the possible accessibility problems. A clean result is not a claim of conformance to any WCAG level. No manual keyboard-only or screen-reader testing is recorded here. Screens not listed, other roles, error states and the offline states were not scanned.",
+  "pagesScanned": 22,
+  "violationInstances": 0,
+  "violationsByImpact": {},
+  "results": [
+    {
+      "page": "login",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 27,
+      "incomplete": [],
+      "inapplicable": 62
+    },
+    {
+      "page": "dashboard",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 31,
+      "incomplete": [],
+      "inapplicable": 58
+    },
+    {
+      "page": "cost",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 40,
+      "incomplete": [],
+      "inapplicable": 49
+    },
+    {
+      "page": "commitments",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 40,
+      "incomplete": [],
+      "inapplicable": 49
+    },
+    {
+      "page": "rfis",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 44,
+      "incomplete": [],
+      "inapplicable": 45
+    },
+    {
+      "page": "submittals",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 44,
+      "incomplete": [],
+      "inapplicable": 45
+    },
+    {
+      "page": "change-orders",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 42,
+      "incomplete": [],
+      "inapplicable": 47
+    },
+    {
+      "page": "pay-applications",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 44,
+      "incomplete": [],
+      "inapplicable": 45
+    },
+    {
+      "page": "daily-logs",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 42,
+      "incomplete": [],
+      "inapplicable": 47
+    },
+    {
+      "page": "schedule",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 45,
+      "incomplete": [],
+      "inapplicable": 44
+    },
+    {
+      "page": "forecast",
+      "viewport": "desktop 1280x800",
+      "violations": [],
+      "passes": 46,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 10
+        }
+      ],
+      "inapplicable": 43
+    },
+    {
+      "page": "login",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 27,
+      "incomplete": [],
+      "inapplicable": 62
+    },
+    {
+      "page": "dashboard",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 31,
+      "incomplete": [],
+      "inapplicable": 58
+    },
+    {
+      "page": "cost",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 41,
+      "incomplete": [],
+      "inapplicable": 48
+    },
+    {
+      "page": "commitments",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 41,
+      "incomplete": [],
+      "inapplicable": 48
+    },
+    {
+      "page": "rfis",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 45,
+      "incomplete": [],
+      "inapplicable": 44
+    },
+    {
+      "page": "submittals",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 45,
+      "incomplete": [],
+      "inapplicable": 44
+    },
+    {
+      "page": "change-orders",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 43,
+      "incomplete": [],
+      "inapplicable": 46
+    },
+    {
+      "page": "pay-applications",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 45,
+      "incomplete": [],
+      "inapplicable": 44
+    },
+    {
+      "page": "daily-logs",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 43,
+      "incomplete": [],
+      "inapplicable": 46
+    },
+    {
+      "page": "schedule",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 46,
+      "incomplete": [],
+      "inapplicable": 43
+    },
+    {
+      "page": "forecast",
+      "viewport": "phone 375x812",
+      "violations": [],
+      "passes": 47,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 10
+        }
+      ],
+      "inapplicable": 42
+    }
+  ]
+}

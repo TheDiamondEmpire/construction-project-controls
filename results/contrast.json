@@ -1,0 +1,268 @@
+{
+  "method": "WCAG 2.x relative luminance contrast ratio computed from the hex colour tokens in web/styles.css (light theme only; there is no dark theme)",
+  "limits": "Colour pairs only. Text over images, hover and disabled states other than those listed, and browser-rendered widgets are not covered.",
+  "pairs": 26,
+  "failed": 0,
+  "results": [
+    {
+      "foreground": "--ink",
+      "foregroundHex": "#17202b",
+      "background": "--bg",
+      "backgroundHex": "#f4f6f9",
+      "use": "body text on page background",
+      "minimum": 4.5,
+      "ratio": 15.18,
+      "pass": true
+    },
+    {
+      "foreground": "--ink",
+      "foregroundHex": "#17202b",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "body text on cards and tables",
+      "minimum": 4.5,
+      "ratio": 16.43,
+      "pass": true
+    },
+    {
+      "foreground": "--ink",
+      "foregroundHex": "#17202b",
+      "background": "--summary-row",
+      "backgroundHex": "#f1f4f8",
+      "use": "summary rows in the cost table",
+      "minimum": 4.5,
+      "ratio": 14.9,
+      "pass": true
+    },
+    {
+      "foreground": "--ink",
+      "foregroundHex": "#17202b",
+      "background": "--crit-row",
+      "backgroundHex": "#fff1f1",
+      "use": "critical-path rows",
+      "minimum": 4.5,
+      "ratio": 14.95,
+      "pass": true
+    },
+    {
+      "foreground": "--muted",
+      "foregroundHex": "#4a5565",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "secondary text on cards",
+      "minimum": 4.5,
+      "ratio": 7.56,
+      "pass": true
+    },
+    {
+      "foreground": "--muted",
+      "foregroundHex": "#4a5565",
+      "background": "--bg",
+      "backgroundHex": "#f4f6f9",
+      "use": "secondary text on page background",
+      "minimum": 4.5,
+      "ratio": 6.98,
+      "pass": true
+    },
+    {
+      "foreground": "--brand",
+      "foregroundHex": "#0b4f8a",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "links and link-style buttons on cards",
+      "minimum": 4.5,
+      "ratio": 8.4,
+      "pass": true
+    },
+    {
+      "foreground": "--brand",
+      "foregroundHex": "#0b4f8a",
+      "background": "--bg",
+      "backgroundHex": "#f4f6f9",
+      "use": "links on page background",
+      "minimum": 4.5,
+      "ratio": 7.76,
+      "pass": true
+    },
+    {
+      "foreground": "--brand-ink",
+      "foregroundHex": "#ffffff",
+      "background": "--brand",
+      "backgroundHex": "#0b4f8a",
+      "use": "primary buttons and the current navigation item",
+      "minimum": 4.5,
+      "ratio": 8.4,
+      "pass": true
+    },
+    {
+      "foreground": "--brand-ink",
+      "foregroundHex": "#ffffff",
+      "background": "--brand-dark",
+      "backgroundHex": "#093f6e",
+      "use": "primary button on hover",
+      "minimum": 4.5,
+      "ratio": 10.78,
+      "pass": true
+    },
+    {
+      "foreground": "--danger",
+      "foregroundHex": "#9b1c1c",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "destructive button text",
+      "minimum": 4.5,
+      "ratio": 8.15,
+      "pass": true
+    },
+    {
+      "foreground": "--good-ink",
+      "foregroundHex": "#0d4d28",
+      "background": "--good-bg",
+      "backgroundHex": "#ddf3e4",
+      "use": "success badges",
+      "minimum": 4.5,
+      "ratio": 8.54,
+      "pass": true
+    },
+    {
+      "foreground": "--bad-ink",
+      "foregroundHex": "#7a1212",
+      "background": "--bad-bg",
+      "backgroundHex": "#fde4e4",
+      "use": "error badges and notices",
+      "minimum": 4.5,
+      "ratio": 9.05,
+      "pass": true
+    },
+    {
+      "foreground": "--warn-ink",
+      "foregroundHex": "#5a3a00",
+      "background": "--warn-bg",
+      "backgroundHex": "#fff1cf",
+      "use": "warning badges",
+      "minimum": 4.5,
+      "ratio": 9.18,
+      "pass": true
+    },
+    {
+      "foreground": "--info-ink",
+      "foregroundHex": "#0b3a66",
+      "background": "--info-bg",
+      "backgroundHex": "#deeaf7",
+      "use": "info badges, notices and sync status",
+      "minimum": 4.5,
+      "ratio": 9.51,
+      "pass": true
+    },
+    {
+      "foreground": "--neutral-ink",
+      "foregroundHex": "#2a3441",
+      "background": "--neutral-bg",
+      "backgroundHex": "#e7ebf0",
+      "use": "neutral badges and table headers",
+      "minimum": 4.5,
+      "ratio": 10.53,
+      "pass": true
+    },
+    {
+      "foreground": "--bad-ink",
+      "foregroundHex": "#7a1212",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "negative figures and values on cards",
+      "minimum": 4.5,
+      "ratio": 10.92,
+      "pass": true
+    },
+    {
+      "foreground": "--good-ink",
+      "foregroundHex": "#0d4d28",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "positive figures on cards",
+      "minimum": 4.5,
+      "ratio": 9.96,
+      "pass": true
+    },
+    {
+      "foreground": "--warn-ink",
+      "foregroundHex": "#5a3a00",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "warning figures on cards",
+      "minimum": 4.5,
+      "ratio": 10.29,
+      "pass": true
+    },
+    {
+      "foreground": "--field-border",
+      "foregroundHex": "#7b8796",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "input and button borders (non-text)",
+      "minimum": 3,
+      "ratio": 3.65,
+      "pass": true
+    },
+    {
+      "foreground": "--brand",
+      "foregroundHex": "#0b4f8a",
+      "background": "--bg",
+      "backgroundHex": "#f4f6f9",
+      "use": "focus outline (non-text)",
+      "minimum": 3,
+      "ratio": 7.76,
+      "pass": true
+    },
+    {
+      "foreground": "--bar",
+      "foregroundHex": "#4f6f8f",
+      "background": "--neutral-bg",
+      "backgroundHex": "#e7ebf0",
+      "use": "schedule bars on their track (non-text)",
+      "minimum": 3,
+      "ratio": 4.38,
+      "pass": true
+    },
+    {
+      "foreground": "--bar-crit",
+      "foregroundHex": "#b3261e",
+      "background": "--neutral-bg",
+      "backgroundHex": "#e7ebf0",
+      "use": "critical schedule bars on their track (non-text)",
+      "minimum": 3,
+      "ratio": 5.46,
+      "pass": true
+    },
+    {
+      "foreground": "--bar",
+      "foregroundHex": "#4f6f8f",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "chart planned-value line (non-text)",
+      "minimum": 3,
+      "ratio": 5.25,
+      "pass": true
+    },
+    {
+      "foreground": "--bar-crit",
+      "foregroundHex": "#b3261e",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "chart actual-cost marker (non-text)",
+      "minimum": 3,
+      "ratio": 6.54,
+      "pass": true
+    },
+    {
+      "foreground": "--ev",
+      "foregroundHex": "#0f6a35",
+      "background": "--surface",
+      "backgroundHex": "#ffffff",
+      "use": "chart earned-value marker (non-text)",
+      "minimum": 3,
+      "ratio": 6.7,
+      "pass": true
+    }
+  ]
+}

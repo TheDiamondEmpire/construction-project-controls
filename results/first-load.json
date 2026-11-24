@@ -1,0 +1,65 @@
+{
+  "browser": "Chromium-based browser 157.0.8103.39",
+  "page": "login screen (signed out)",
+  "requestCount": 11,
+  "allSameOrigin": true,
+  "totalBodyBytes": 81003,
+  "requests": [
+    {
+      "url": "/",
+      "status": 200,
+      "bytes": 751
+    },
+    {
+      "url": "/api.js",
+      "status": 200,
+      "bytes": 1593
+    },
+    {
+      "url": "/app.js",
+      "status": 200,
+      "bytes": 12967
+    },
+    {
+      "url": "/dom.js",
+      "status": 200,
+      "bytes": 3733
+    },
+    {
+      "url": "/icon.svg",
+      "status": 200,
+      "bytes": 416
+    },
+    {
+      "url": "/offline.js",
+      "status": 200,
+      "bytes": 7405
+    },
+    {
+      "url": "/shared/logmerge.js",
+      "status": 200,
+      "bytes": 6960
+    },
+    {
+      "url": "/styles.css",
+      "status": 200,
+      "bytes": 8406
+    },
+    {
+      "url": "/views-field.js",
+      "status": 200,
+      "bytes": 8977
+    },
+    {
+      "url": "/views-plan.js",
+      "status": 200,
+      "bytes": 13574
+    },
+    {
+      "url": "/views-workflow.js",
+      "status": 200,
+      "bytes": 16221
+    }
+  ],
+  "note": "Counts and exact response body bytes of the first load of the signed-out screen, uncached, before the service worker is installed. Not a timing measurement."
+}

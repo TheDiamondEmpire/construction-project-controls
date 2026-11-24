@@ -1,0 +1,27 @@
+{
+  "what": "Scan of every text file outside node_modules and ignored build directories for drive paths, home-directory paths, the OS user name and personal names",
+  "filesScanned": 119,
+  "findings": [],
+  "legacyUnchangedOnPurpose": [
+    {
+      "file": "docs/assets/banner.svg",
+      "line": 29,
+      "kind": "personal name"
+    },
+    {
+      "file": "docs/assets/social-preview.svg",
+      "line": 29,
+      "kind": "personal name"
+    },
+    {
+      "file": "README.md",
+      "line": 230,
+      "kind": "personal name"
+    },
+    {
+      "file": "README.md",
+      "line": 230,
+      "kind": "personal name"
+    }
+  ]
+}

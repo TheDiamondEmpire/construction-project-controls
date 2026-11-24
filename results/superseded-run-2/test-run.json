@@ -1,0 +1,42 @@
+{
+  "command": "npm run test:record",
+  "node": "v25.9.0",
+  "platform": "win32-x64",
+  "typecheck": {
+    "command": "tsc --noEmit",
+    "exitCode": 0,
+    "errors": 0
+  },
+  "tests": {
+    "exitCode": 0,
+    "tests": 150,
+    "pass": 150,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "testFiles": [
+    "api-access.test.ts",
+    "api-cost.test.ts",
+    "api-field.test.ts",
+    "api-schedule.test.ts",
+    "api-workflow.test.ts",
+    "costs.test.ts",
+    "cpm.test.ts",
+    "docs.test.ts",
+    "evm.test.ts",
+    "experiments.test.ts",
+    "hygiene.test.ts",
+    "importers.test.ts",
+    "money-dates.test.ts",
+    "payapp.test.ts",
+    "scripts.test.ts",
+    "startup.test.ts",
+    "stats.test.ts",
+    "sync.test.ts",
+    "ui.test.ts",
+    "workflow.test.ts"
+  ],
+  "note": "Totals only; no durations are recorded because the machine is shared and timings would not be performance."
+}
